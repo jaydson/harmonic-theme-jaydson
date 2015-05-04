@@ -1,5 +1,7 @@
 {
     "mycustomdata" : "wow",
     "foo" : "bar",
-    "baz" : ["a","b"]
+    "baz" : ["a","b"],
+    "title_1" : "Jaydson",
+	"title_2" : "Gomes"
 }
