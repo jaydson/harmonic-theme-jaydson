@@ -5,15 +5,18 @@
     <title>{{ page.metadata.title }} - {{ config.title }}</title>
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta property="og:image" content="http://es6rocks.com/images/es6rocks.png" />
+    <link rel="canonical" href="{{ config.domain }}">
+    <link href="/favico.ico" rel="icon">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-{% include "partials/navigation.html" %}
-<body>
-	<header class="postContent__title">
+	{% include "partials/navigation.html" %}
+	
+	<img class="page_image" src="{{ page.metadata.image }}" alt="{{ page.metadata.title }}">
+	<header class="postContent">
 	    <h2>
-	      {{ page.metadata.title }}
+	      {{ page.metadata.title | capitalize }}
 	    </h2>
 	    <div class="categories">
 	    	{% for category in page.metadata.categories %}

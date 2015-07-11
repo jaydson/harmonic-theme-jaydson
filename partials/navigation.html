@@ -3,10 +3,12 @@
         <li class="meni__item">
             <a href="/">Home</a>
         </li> 
+        {% for page in pages %}
         <li class="meni__item">
-            <a href="https://speakerdeck.com/jaydson">Talks</a>
+            <a href="{{ page.href }}">{{ page.title | capitalize }}</a>
         </li>
-         <li class="meni__item">
+        {% endfor %}
+        <li class="meni__item">
             <a class="social__link" href="https://twitter.com/jaydson">
                 {% include "partials/components/twitter.html" %}
             </a>

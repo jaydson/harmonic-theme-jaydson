@@ -661,3 +661,7 @@ footer {
   margin-left: 10px;
   color: #fff;
 }
+
+.page_image {
+  width: 100%;
+}
