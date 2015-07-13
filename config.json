@@ -6,6 +6,7 @@
 	"title_2" : "Gomes",
 	"pages": [
 				{ "title":"speaking", "link":"/pages/speaking" },
-				{ "title":"talks", "link":"/pages/talks" }
+				{ "title":"talks", "link":"/pages/talks" },
+				{ "title":"teste", "link":"/pages/talks" }
 	]
 }
