@@ -18,6 +18,14 @@
     <link href="/css/vendor/prism.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
     <link href="/favico.ico" rel="icon">
+
+     <!-- Facebook Tags -->
+    <meta property="og:description" content="{{ post.metadata.description }}">
+    <meta property="og:image" content="http://jaydson.org/images/logo-jaydson-gray.png">
+    <meta property="og:site_name" content="{{ config.title }} - {{ post.metadata.title }}">
+    <meta property="og:title" content="{{ post.metadata.title }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/{{ post.metadata.link }}">
 </head>
 <body>
     {% include "partials/navigation.html" %}
